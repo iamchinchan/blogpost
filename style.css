@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  /* height: 80px; */
+}
+
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 60px;
+}
+.postHeader {
+  margin-bottom: 30px;
+}
+aside {
+  width: 500px;
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+}
+
+.likeButton {
+  position: absolute;
+  padding: 20px;
+  cursor: pointer;
+  right: 50px;
+  bottom: 50px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  padding: 5px 10px;
+  background-color: #ffe70e;
+  position: absolute;
+  font-size: 16px;
+  color: #444;
+  right: -25px;
+  top: -10px;
+  font-weight: bold;
+  display: inline-block;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  /* font-style: normal;
+  font-weight: normal; */
+}
+/* p::first-line {
+  color: red;
+} */
+h3 + p::first-line {
+  color: red;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* foe removing space after last li element but noe needed as we have given margin-bottom to ul and ol and bc of
+margin collapse final of 20 and 0 will be grtr 1 always of the 2 */
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+
+/* wont work on paragraph(p) inside a list which means it will not work but why?
+on child paragraphs of lists which are even possitined wrt its parent */
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/* will selct paragraphs in even positioned lists inside parent of those lists */
+/* li:nth-child(even) p {
+  color: red;
+} */
+
+/* styling links */
+/* element selector have low priority the pseudo classes */
+
+a:link {
+  /* font-style: normal;
+  font-weight: normal; */
+  color: #1098ad;
+  text-decoration: none;
+  /* border: 1px solid mediumorchid; */
+}
+a:visited {
+  color: #1098ad;
+  /* border-color: red; */
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+.postImg {
+  /* width: auto;
+  height: 300px; */
+  width: 100%;
+  height: auto;
+}
+
+/* resolving conflicts */
+/* #copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: #444 !important;
+} */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
