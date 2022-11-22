@@ -18,7 +18,7 @@ body {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   /* height: 80px; */
 }
 
@@ -28,13 +28,13 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .postHeader {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 aside {
-  width: 500px;
+  /* width: 500px; */
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
@@ -101,9 +101,9 @@ p {
 /* p::first-line {
   color: red;
 } */
-h3 + p::first-line {
+/* h3 + p::first-line {
   color: red;
-}
+} */
 ul,
 ol {
   margin-left: 50px;
@@ -309,7 +309,8 @@ footer {
   font-size: 14px;
   font-style: italic;
 }
-.row {
+/* FlexBox layout code for learning purpose */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 5%;
@@ -321,4 +322,20 @@ article {
 }
 aside {
   flex-basis: 25%;
+} */
+
+/* CSS Grid */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 25%;
+  row-gap: 60px;
+  column-gap: 5%;
+  align-items: start;
+}
+.main-header {
+  grid-column: 1/-1;
+}
+footer {
+  grid-column: 1/-1;
 }
