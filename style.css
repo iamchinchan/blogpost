@@ -24,7 +24,7 @@ body {
 
 nav {
   font-size: 18px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* article {
@@ -78,7 +78,8 @@ h2::after {
   right: -25px;
   top: -10px;
   font-weight: bold;
-  display: inline-block;
+  /* display: inline-block; */
+  display: block;
 }
 h3 {
   font-size: 30px;
